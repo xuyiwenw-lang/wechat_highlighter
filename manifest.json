@@ -1,0 +1,17 @@
+{
+  "name": "wechat_highlighter",
+  "version": "1.1",
+  "manifest_version": 3,
+  "description": "针对微信公众号文章，提供段落悬浮高亮功能",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://mp.weixin.qq.com/s/*",
+        "*://*.weibo.com/ttarticle/*",
+        "*://m.mindcherish.com/expert/*"
+      ],
+      "css": ["styles.css"],
+      "js": ["content.js"]
+    }
+  ]
+}
